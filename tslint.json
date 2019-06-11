@@ -1,0 +1,12 @@
+{
+  "extends": "simplr-tslint",
+  "rules": {
+    "arrow-return-shorthand": false,
+    "backing-field": false,
+    "no-require-imports": false,
+    "no-default-export": false
+  },
+  "linterOptions": {
+    "exclude": ["*.json", "**/*.json"]
+  }
+}

@@ -1,0 +1,34 @@
+{
+    "compilerOptions": {
+        "baseUrl": "./",
+        "target": "es6",
+        "strict": true,
+        "esModuleInterop": true,
+        "module": "esnext",
+        "rootDir": "src",
+        "outDir": "dist",
+        "jsx": "react",
+        "moduleResolution": "node",
+        "forceConsistentCasingInFileNames": true,
+        "resolveJsonModule": true,
+        "noUnusedLocals": true,
+        "inlineSourceMap": true,
+        "inlineSources": true,
+        "paths": {
+            "@assets/*": ["src/assets/*"],
+            "@modules/*": ["src/modules/*"],
+            "@styles/*": ["src/styles/*"],
+            "@routing/*": ["src/routing/*"],
+            "@utils/*": ["src/utils/*"],
+            "@app/config": ["src/app-config.ts"]
+        },
+        "plugins": [
+            {
+                "name": "tslint-language-service",
+                "alwaysShowRuleFailuresAsWarnings": true,
+                "ignoreDefinitionFiles": true
+            }
+        ]
+    },
+    "exclude": ["node_modules", "dist"]
+}
