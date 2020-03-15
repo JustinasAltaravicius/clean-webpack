@@ -57,7 +57,9 @@ module.exports = new webpackBuilder.Builder(__dirname, {
         }
     })
     .use(images, { imageSizeLimitInBytes: 10240 })
-    .use(webpackDevServer)
+    .use(webpackDevServer, {
+        port: 80
+    })
     .use(htmlPlugin, {
         inject: false,
         appMountId: "root",
